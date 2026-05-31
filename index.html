@@ -15,42 +15,37 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-ig navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand">GENTELMEN'S BARBERSHOP</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#team">Team</a>
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                    <a class="nav-link" href="#testimoni">Testimoni</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    
-    <input type="text" id="search">
-
-    <ul class="navbar-nav ms-auto">
-    <li class="nav-item">
-        <a class="nav-link">Home</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link">About</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link">Services</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link">Team</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link">Gallery</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link">Contact</a>
-    </li>
-</ul>
-    <section id="hero">
+    <section id="hero" class="hero">
+    <div class="container text-center">
         <h1>GENTELMEN'S BARBERSHOP</h1>
-        <p>Professional Haircut For Gentelmen"s</p>
+        <p>Professional Haircut For Gentlemen</p>
+        <button
+        id="btnBooking"
+        class="btn btn-primary btn-lg">
+            Booking Now
+        </button>
+        <div
+        id="notif"
+        class="alert alert-success mt-3 d-none">
+            Booking berhasil!
+        </div>
+    </div>
     </section>
     <button id="btnBooking" class="btn btn-primary">
         Booking Now
@@ -67,31 +62,52 @@
     </ul>
     </section>
     <section id="services">
-        <div class="card">
+        <h2>Services</h2>
+        <input type="text" id="search" class="form-control mb-4" placeholder="cari layanan...">
+        <div class="card service-card">
             <div class="card-body">
                 <h5>Haircut</h5>
             </div>
         </div>
-        <div class="card">
+        <div class="card service-card">
             <div class="card-body">
                 <h5>Shaving</h5>
             </div>
         </div>
-        <div class="card">
+        <div class="card service-card">
             <div class="card-body">
                 <h5>Hair Coloring</h5>
             </div>
         </div>
     </section>
-    <section id="team">
+        <section id="team">
+
         <div class="card">
-            <h5 class="card-header">Barber 1</h5>
-            <img src="cukur1.avif">
-            <div class="card-body">
-                Andi
-            </div>
-        </div>  
+            <h5 class="card-header">Senior Barber</h5>
+                <img src="cukur1.avif">
+                    <div class="card-body">
+                        Andi
+                    </div>
+        </div>
+
+        <div class="card">
+            <h5 class="card-header">Hair Stylist</h5>
+                <img src="cukur2.jpg">
+                    <div class="card-body">
+                        Budi
+                    </div>
+        </div>
+
+        <div class="card">
+            <h5 class="card-header">Color Specialist</h5>
+                <img src="cukur3.avif">
+                    <div class="card-body">
+                        Doni
+                    </div>
+        </div>
+
     </section>
+
     <section id="gallery">
         <img src="gambar1.jpg">
         <img src="gambar2.jpg">
@@ -162,29 +178,23 @@
     </div>
 
     </section>
-    <section id="contact">
-        <form id="contactForm">
-            <input type="text" id="nama" placeholder="Nama">
-            <input type="email" id="email" placeholder="Email">
-            <button type="submit">Kirim</button>
-        </form>
-    </section>
-    <section id="booking" class="d-none">
-        <h2>Booking Form</h2>
-        <form id="bookingForm">
-            <input type="text" id="namaBooking" placeholder="Nama">
-            <input type="email" id="emailBooking" placeholder="Email">
-            <input type="date" id="tanggalBooking">
-            <button type="submit">Submit</button>
-        </form>
-    <div id="notif" class="d-none">
-        Booking berhasil
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+        <input type="text" id="nama" class="form-control mb-3" placeholder="Nama">
+        <input type="email" id="email" class="form-control mb-3" placeholder="Email">
+        <button type="submit" class="btn btn-success">
+            Kirim
+        </button>
+    </form>
+</section>
+    <div class="text-center my-4">
+        <button id="themeBtn" class="btn btn-warning">Dark Mode</button>
     </div>
-    </section>
-    <button id="themeBtn">Dark Mode</button>
-    
-    <footer>
-    © 2026 GENTELMEN'S BARBERSHOP. All rights reserved.barbershop. All rights reserved.
-    </footer>
+<footer>
+    © 2026 GENTELMEN'S BARBERSHOP. All rights reserved.
+</footer>
 </body>
 </html>
