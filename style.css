@@ -1,0 +1,9 @@
+.hero{
+    height:100vh;
+    background:url('../assets/hero.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
